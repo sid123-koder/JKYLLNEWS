@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+<h1>Top News</h1>
+<div id="news">
+  {% for post in site.posts limit:5 %}
+    <div class="post">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </div>
+    {% include ad_block.html %}
+  {% endfor %}
+</div>

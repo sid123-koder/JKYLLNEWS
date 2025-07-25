@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>News Portal</h1>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a> |
+      <a href="{{ '/articles.html' | relative_url }}">Articles</a> |
+      <a href="{{ '/cms/' | relative_url }}">CMS</a>
+    </nav>
+  </header>
+  <main>{{ content }}</main>
+  <footer>&copy; 2025 News Portal</footer>
+</body>
+</html>
